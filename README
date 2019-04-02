@@ -1,0 +1,22 @@
+# MyLucid
+
+
+MyLucid is converted PSD file to HTML
+ 
+(Source: https://www.webdesignerdepot.com/2015/02/free-download-lucid-one-page-psd-template/)
+
+## Installation
+
+```bash
+npm install
+```
+
+## Usage
+
+```bash
+npm run dev
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+

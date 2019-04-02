@@ -1,0 +1,29 @@
+> npm init (package.json)
+> npm install --save-dev gulp
+
+---
+gulp.js: 
+var gulp = require('gulp'),
+   uglify = require('gulp-uglify');
+
+gulp.task('minify', function () {
+   gulp.src('js/app.js')
+      .pipe(uglify())
+      .pipe(gulp.dest('build'))
+});
+
+
+gulp.task('server', ()=>{
+  browserSync.init({
+    server: {
+        baseDir: "src"
+    },
+    browser: ['chrome']
+  });
+}); 
+
+---
+
+> npm install --save-dev browser-sync
+
+
