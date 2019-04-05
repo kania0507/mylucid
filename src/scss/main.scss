@@ -1,0 +1,15 @@
+/* WEBSITE MODULES: HEADER FOOTER */
+@import 'base/variables';
+@import 'layout/header.scss'; 
+
+@import 'base/reset';
+
+@import 'mixins/mixins';
+
+.page_wrapper {
+	background-color: red;
+	height: 100%;
+}
+
+
+
