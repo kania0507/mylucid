@@ -3,6 +3,7 @@
 @import 'base/variables';
 @import 'mixins/mixins';
 @import 'layout/header.scss'; 
+@import 'layout/features.scss'; 
 
 
 
@@ -19,7 +20,7 @@ body{
 	line-height: 1;
 }
 
-.page_wrapper {	
+.page-wrapper {	
 	width: 100vw;
 	
 
