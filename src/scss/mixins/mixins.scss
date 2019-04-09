@@ -4,3 +4,10 @@
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+
+
+@mixin set-vw {
+	width: 83.75vw;	
+	margin-left:  8.125vw;
+	margin-right:  8.125vw;
+}
