@@ -41,6 +41,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* basic colors */
 .header {
   font-size: 1em;
   position: relative;
@@ -97,29 +98,17 @@ table {
     display: flex;
     justify-content: left;
     margin: 0 auto;
-    padding-top: 3.75em; }
+    padding-top: 3.75em;
+    overflow: hidden; }
     .header .header-bottom-message {
       width: 50vw;
       padding-top: 1em;
       padding-bottom: 1em;
-      padding-right: 2em;
+      padding-right: 0em;
       justify-content: left; }
-      .header .header-bottom-message-info {
-        text-transform: uppercase;
-        color: #008ed6;
-        font-size: 0.875em;
-        letter-spacing: 1px;
-        line-height: 3em;
-        font-family: "Source Sans Pro";
-        font-weight: 700; }
       .header .header-bottom-message h1 {
-        font-size: 3em;
         padding-top: 0.5em;
         padding-bottom: 0.5em; }
-      .header .header-bottom-message p {
-        padding-bottom: 1em;
-        color: #58595d;
-        font-size: 1.125; }
       .header .header-bottom-message .btn {
         border: 0;
         text-transform: uppercase;
@@ -128,7 +117,7 @@ table {
         -moz-border-radius: 0.2em;
         -ms-border-radius: 0.2em;
         border-radius: 0.2em;
-        margin-top: 4em;
+        margin-top: 0em;
         background-color: inherit;
         color: white;
         width: 12em;
@@ -141,31 +130,134 @@ table {
         border: 1px solid rgba(255, 255, 255, 0.2); }
     .header .header-bottom-photo {
       position: relative;
-      left: -5em;
       overflow: hidden; }
       .header .header-bottom-photo-frame {
         width: 50vw;
         height: 30em;
-        background-image: url("../img/devices.png");
+        background-image: url("../img/devices kopia.png");
         background-position: right top;
-        /*-ms-background-size: cover;
-				-o-background-size: cover;
-				-moz-background-size: cover;
-				-webkit-background-size: cover;
-				background-size: cover;*/
-        background-size: 185%;
+        background-size: 180%;
         background-repeat: no-repeat;
         z-index: 10; }
 
-.main-features-info {
-  font-size: 0.875em;
-  letter-spacing: 1px;
-  line-height: 48px;
-  color: #008ed6;
-  font-family: "Source Sans Pro";
-  font-weight: 700;
-  text-align: center; }
+.main-features {
+  width: 83.75vw;
+  margin-left: 8.125vw;
+  margin-right: 8.125vw;
+  display: block;
+  padding-top: 3.75em;
+  padding-bottom: 3.75em;
+  text-align: center;
+  margin: 0 auto; }
+  .main-features .breakline {
+    margin: 0 auto; }
+  .main-features-boxes {
+    margin-top: 3em;
+    padding-top: 1em;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center; }
+    .main-features-boxes-flex-item {
+      padding: 0 1.5em;
+      max-width: 20vw; }
+      .main-features-boxes-flex-item-icon {
+        max-width: 5.5em;
+        height: 5.5em;
+        border-radius: 2.75em;
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
 
+.main-about-long {
+  width: 83.75vw;
+  margin-left: 8.125vw;
+  margin-right: 8.125vw;
+  display: flex;
+  justify-content: stretch;
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  .main-about-long-left {
+    width: 100%;
+    height: 35em;
+    background-image: url("../img/devices.png");
+    background-position: left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10; }
+  .main-about-long-right {
+    width: 100%;
+    padding-top: 1em;
+    padding-right: 2em;
+    position: relative;
+    text-align: left; }
+    .main-about-long-right-list {
+      list-style: none;
+      padding-bottom: 2em; }
+      .main-about-long-right-list li {
+        padding: 0.5em;
+        margin-left: 2em; }
+        .main-about-long-right-list li::before {
+          content: '';
+          background-repeat: no-repeat;
+          display: block;
+          position: absolute;
+          width: 1em;
+          height: 1em;
+          margin-left: -2em; }
+      .main-about-long-right-list--1::before {
+        background-image: url("../img/Cup.png"); }
+      .main-about-long-right-list--2::before {
+        background-image: url("../img/Mouse.png"); }
+      .main-about-long-right-list--3::before {
+        background-image: url("../img/Energy.png"); }
+      .main-about-long-right-list--4::before {
+        background-image: url("../img/Speedometer.png"); }
+
+.main-about-short {
+  background-color: #f2f2f2; }
+  .main-about-short-wrapper {
+    width: 83.75vw;
+    margin-left: 8.125vw;
+    margin-right: 8.125vw;
+    display: flex;
+    justify-content: stretch;
+    padding-top: 2em; }
+  .main-about-short-left {
+    width: 100%;
+    padding-top: 1em;
+    padding-right: 2em;
+    position: relative;
+    text-align: left; }
+  .main-about-short-right {
+    width: 100%;
+    height: 25em;
+    background-image: url("../img/iPhone 5.png");
+    background-position: left top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 10; }
+
+.main-testimonials {
+  background-color: #15141a;
+  background-image: url("../img/Warstwa 8.png");
+  min-height: 50em; }
+
+/* very basic styles */
 * {
   box-sizing: border-box; }
 
@@ -177,5 +269,50 @@ body {
   font-weight: 400;
   line-height: 1; }
 
-.page-wrapper {
-  width: 100vw; }
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+  color: #1a1a1a;
+  padding-top: 0.2em;
+  padding-bottom: 1em; }
+
+h3 {
+  font-size: 1.5em;
+  padding-top: 1.5em; }
+
+p {
+  font-size: 1.125em;
+  color: #999;
+  padding-top: 1em;
+  padding-bottom: 2em; }
+
+.info {
+  font-size: 0.875em;
+  letter-spacing: 1px;
+  line-height: 3em;
+  color: #008ed6;
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.breakline {
+  position: relative; }
+  .breakline:before {
+    content: "\200D";
+    background-color: #008ed6;
+    width: 0.7em;
+    height: 2px;
+    position: absolute;
+    left: 0em;
+    right: 0; }
+  .breakline:after {
+    content: "\200D";
+    background-color: #008ed6;
+    width: 0.7em;
+    height: 2px;
+    position: absolute;
+    left: 0.8em;
+    right: 0; }

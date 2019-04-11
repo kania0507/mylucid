@@ -4,9 +4,11 @@
 @import 'mixins/mixins';
 @import 'layout/header.scss'; 
 @import 'layout/features.scss'; 
+@import 'layout/about-long.scss'; 
+@import 'layout/about-short.scss'; 
+@import 'layout/testimonials.scss'; 
 
-
-
+/* very basic styles */
 *{
 	box-sizing: border-box;
 }
@@ -21,7 +23,73 @@ body{
 }
 
 .page-wrapper {	
-	width: 100vw;
-	
-
 }
+
+h1 {
+	
+	font-size: 3em;
+	//font-weight: 700;
+}
+
+h2 {
+	font-size: 2.25em;	
+	font-weight: 700;
+	color:	$header3;
+	padding-top: 0.2em;
+	padding-bottom: 1em;
+}
+
+h3 {
+	font-size: 1.5em;	
+	padding-top: 1.5em;
+	
+}
+
+p {
+	font-size: 1.125em;		
+	color: $paragraph-features;
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+.info {
+		font-size: 0.875em;
+		letter-spacing: 1px;
+		line-height: 3em;
+		color: $blue;
+		font-family: "Source Sans Pro";
+		font-weight: 700;
+		
+		text-transform: uppercase;
+}
+
+.breakline {			
+		
+		position: relative;
+		
+		
+		&:before {
+			content: "\200D";
+			
+			background-color: $blue;
+			width: 0.7em;
+			height: 2px;
+			position: absolute;			
+			left: 0em;
+			right: 0;
+			
+		}  		
+		&:after {
+			content: "\200D";
+			
+			background-color: $blue;
+			width: 0.7em;
+			height: 2px;
+			position: absolute;			
+			left: 0.8em;
+			right: 0;
+			
+			
+		}  			
+}
+	
