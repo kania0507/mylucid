@@ -1,5 +1,105 @@
 .main-testimonials {
 	background-color: #15141a;
 	background-image: url('../img/Warstwa 8.png');
-	min-height: 50em;
+	min-height: 40em;
+	text-align: center;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	color: white;
+	
+	h2 {
+		color: white;
+	}
+	
+	&-wrapper {
+		@include set-vw;		
+	
+	}
+	
+	.main-testimonials-slider {
+		display: flex;	
+		justify-content: stretch; 		
+		padding-top: 3em;
+		text-align: left;
+		
+		p {
+			color: white;
+			font-style: italic;
+			font-weight: 400;
+			font-size: 1.5em;
+		}
+		
+		&-left {						
+			width: 50vw;
+			padding: 1.1em;
+			
+		}
+		&-right {	
+			padding: 1.1em;			
+			width: 50vw;					
+			
+			
+		}
+		
+		&-pagination {
+			text-align: center;
+			margin: 0 auto;
+			
+			margin-top: 6em;
+			display: flex;
+			JUSTIFY-CONTENT: center;
+			ALIGN-ITEMS: center;
+				
+			
+			&-dot {
+				width: 0.44em;
+				height: 0.44em;
+				border-radius: 0.19em;
+				background-color: rgba(255,255,255,0);
+				border: 1px solid rgba(255,255,255,0.2);
+				margin: 1.25em;
+				
+				&-active {
+					width: 0.875em;
+					height: 0.875em;
+					border-radius: 0.44em;
+					background-color: #ffffff;
+					margin: 1em;
+				}
+			}
+		
+		}
+		
+		&-box {
+		
+			display: flex;
+			align-items: center;
+			padding-left: 0em;
+			
+			&-author{
+				padding-left: 1.5em;
+				
+				
+				&__name {
+					width: 100%;
+					display: block;	
+					font-size: 1em;
+				}
+				&__position {
+					
+					font-size: 0.875em;
+					font-weight: 700;
+					text-transform: uppercase;
+				}
+			}
+			
+			&__img {
+				width: 3.69em;
+				height: 3.69em;
+				border-radius: 1.81em;
+				//background-color: $blue;
+			}
+		}
+	}
+	
 }
