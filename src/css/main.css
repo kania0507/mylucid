@@ -109,25 +109,6 @@ table {
       .header .header-bottom-message h1 {
         padding-top: 0.5em;
         padding-bottom: 0.5em; }
-      .header .header-bottom-message .btn {
-        border: 0;
-        text-transform: uppercase;
-        font-size: 0.7em;
-        -webkit-border-radius: 0.2em;
-        -moz-border-radius: 0.2em;
-        -ms-border-radius: 0.2em;
-        border-radius: 0.2em;
-        margin-top: 0em;
-        background-color: inherit;
-        color: white;
-        width: 12em;
-        height: 3.125em;
-        box-shadow: 0 0 3px rgba(3, 3, 3, 0.1);
-        margin-right: 1em; }
-      .header .header-bottom-message .btn--blue {
-        background-color: #008ed6; }
-      .header .header-bottom-message .btn--shadow {
-        border: 1px solid rgba(255, 255, 255, 0.2); }
     .header .header-bottom-photo {
       position: relative;
       overflow: hidden; }
@@ -323,6 +304,85 @@ table {
         height: 3.69em;
         border-radius: 1.81em; }
 
+.main-eye-catcher {
+  background-color: #15141a;
+  text-align: center;
+  padding-top: 4.375em;
+  padding-bottom: 4.375em; }
+  .main-eye-catcher h2 {
+    color: white; }
+
+.pricing-plans {
+  padding-top: 3.125em;
+  padding-bottom: 3.125em;
+  text-align: center; }
+  .pricing-plans-wrapper {
+    width: 83.75vw;
+    margin-left: 8.125vw;
+    margin-right: 8.125vw; }
+  .pricing-plans-table {
+    padding-top: 3.125em;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .pricing-plans-table-col {
+      width: 24vw;
+      margin: 1em;
+      align-items: center;
+      border: 1px solid rgba(3, 3, 3, 0.1); }
+      .pricing-plans-table-col-header {
+        color: #15141a;
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 700;
+        padding: 1em;
+        align-items: center;
+        border-bottom: 1px solid rgba(3, 3, 3, 0.1); }
+        .pricing-plans-table-col-header--active {
+          color: #008ed6; }
+      .pricing-plans-table-col-price {
+        max-height: 9.375em;
+        width: 100%;
+        align-items: center;
+        font-weight: 600;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        border-bottom: 1px solid rgba(3, 3, 3, 0.1); }
+        .pricing-plans-table-col-price h4 {
+          font-size: 3.75em;
+          position: relative; }
+          .pricing-plans-table-col-price h4 .dolar {
+            font-size: 0.56em;
+            position: absolute;
+            top: 0.05em;
+            left: 2.2em; }
+        .pricing-plans-table-col-price--active {
+          background-color: #008ed6;
+          color: white; }
+        .pricing-plans-table-col-price .per-month {
+          font-size: 1.125em;
+          color: #999; }
+          .pricing-plans-table-col-price .per-month--active {
+            color: white; }
+      .pricing-plans-table-col-body {
+        max-height: 16.25em;
+        align-items: center;
+        font-weight: 400;
+        padding-bottom: 2.5em; }
+        .pricing-plans-table-col-body p {
+          font-size: 1.125em;
+          color: #999;
+          padding: 2.5em 1.25em; }
+        .pricing-plans-table-col-body .btn {
+          color: #008ed6;
+          font-size: 1em;
+          font-weight: 700;
+          margin: 0 auto; }
+          .pricing-plans-table-col-body .btn--blue {
+            font-size: inherit;
+            font-weight: inherit;
+            color: white; }
+
 /* very basic styles */
 * {
   box-sizing: border-box; }
@@ -354,6 +414,28 @@ p {
   color: #999;
   padding-top: 1em;
   padding-bottom: 2em; }
+
+.btn {
+  border: 0;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  border-radius: 0.2em;
+  margin-top: 0em;
+  background-color: inherit;
+  color: white;
+  width: 12em;
+  height: 3.125em;
+  box-shadow: 0 0 3px rgba(3, 3, 3, 0.1);
+  margin-right: 1em; }
+
+.btn--blue {
+  background-color: #008ed6; }
+
+.btn--shadow {
+  border: 1px solid rgba(255, 255, 255, 0.2); }
 
 .info {
   font-size: 0.875em;

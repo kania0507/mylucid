@@ -1,0 +1,122 @@
+.pricing-plans {
+	padding-top: 3.125em;
+	padding-bottom: 3.125em;
+	text-align: center;
+
+	&-wrapper {
+		@include set-vw;
+	}
+	
+	&-table {	
+		padding-top: 3.125em;
+		display: flex;
+		flex-direction: row;
+		//justify-content: center;
+		align-items: center;
+		
+		
+		&-col {
+			width: 24vw;
+			margin: 1em;
+			align-items: center;
+			border: 1px solid rgba(3,3,3,0.1);
+			
+			&-header {
+				color: $bg-black;
+				text-transform: uppercase;
+				font-size: 1.25em;
+				font-weight: 700;
+				padding: 1em;
+				
+				align-items: center;
+				border-bottom: 1px solid rgba(3,3,3,0.1);
+				
+				&--active {
+					color: $blue;
+				}
+			}
+			
+			&-price {
+				max-height: 9.375em;//5.625em;
+				width: 100%;
+				align-items: center;
+				font-weight: 600;
+				
+				padding-top: 1.5em;
+				padding-bottom: 1.5em;
+				border-bottom: 1px solid rgba(3,3,3,0.1);
+				
+				h4 {
+					font-size: 3.75em;
+					position: relative;
+					.dolar {
+						font-size: 0.56em;
+						position: absolute;
+						top: 0.05em;
+						left: 2.2em;
+					}
+				}
+				
+				
+				
+				&--active {
+					background-color: $blue;
+					color: white;
+					
+				}
+				
+				
+				.per-month {
+					
+					font-size: 1.125em;
+					color: #999;
+					
+					&--active {
+						color: white;
+					}
+				}
+			}
+			
+			&-body {
+				
+				max-height: 16.25em;
+				align-items: center;
+				//box-shadow: 0 0 3px rgba(3,3,3,0.1);
+				font-weight: 400;
+				//padding-top: 2.5em;
+				padding-bottom: 2.5em;
+				
+				
+				p {
+					font-size: 1.125em;
+					color: #999;
+					padding: 2.5em 1.25em;
+					//padding-top: 2.5em;
+					//padding-bottom: 2.5em;
+					//padding-left: 1em;
+					//padding-right: 1em;
+				}
+				
+				.btn {
+					color: $blue;
+					font-size: 1em;
+					font-weight: 700;
+					margin: 0 auto;
+					
+					
+					
+					&--blue {
+						font-size: inherit;
+						font-weight: inherit;
+						color: white;
+					}
+				}
+			}
+				
+				
+			
+		}
+		
+		
+	}
+}
