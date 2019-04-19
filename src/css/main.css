@@ -383,6 +383,92 @@ table {
             font-weight: inherit;
             color: white; }
 
+.contact {
+  background-color: #ededed;
+  text-align: center;
+  padding-top: 3.75em;
+  margin: 0 auto;
+  z-index: 1;
+  overflow: hidden; }
+  .contact-table {
+    display: flex;
+    align-items: stretch;
+    padding-top: 2.5em;
+    justify-content: center; }
+    .contact-table-col {
+      width: 25vw;
+      padding-left: 6em;
+      padding-right: 6em;
+      align-items: stretch;
+      height: 100%; }
+  .contact .contact-form {
+    width: 100%;
+    min-height: 30vh;
+    padding: 2.5em;
+    z-index: 10;
+    margin-top: 10em; }
+    .contact .contact-form-row {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: flex-end; }
+    .contact .contact-form-wrapper {
+      width: 50%;
+      margin: 0 auto;
+      background-color: #15141a;
+      display: flex;
+      flex-direction: column;
+      padding-left: auto;
+      padding-right: auto;
+      z-index: 10; }
+    .contact .contact-form-left {
+      width: 45%;
+      flex-direction: row; }
+      .contact .contact-form-left input {
+        padding: 0.5em;
+        margin: 0.2em;
+        height: 3.125em;
+        width: 98%;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: #15141a;
+        text-transform: uppercase; }
+    .contact .contact-form-right {
+      flex-direction: row;
+      width: 45%;
+      flex: 1; }
+      .contact .contact-form-right textarea {
+        flex: 1;
+        width: 98%;
+        height: 97%;
+        margin: 0.2em;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        font-family: inherit;
+        background-color: #15141a;
+        text-transform: uppercase; }
+    .contact .contact-form .btn {
+      margin: 1em; }
+  .contact-map {
+    min-height: 25em;
+    background-color: #ccc;
+    margin-top: -10em;
+    z-index: -10;
+    overflow: hidden; }
+
+.footer {
+  background-color: #15141a;
+  min-height: 10em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444348;
+  font-weight: 700;
+  font-size: 0.875em;
+  padding-top: 3em; }
+  .footer-social-icons li {
+    display: inline;
+    padding-left: 3em; }
+
 /* very basic styles */
 * {
   box-sizing: border-box; }
@@ -454,7 +540,7 @@ p {
     width: 0.7em;
     height: 2px;
     position: absolute;
-    left: 0em;
+    left: 0;
     right: 0; }
   .breakline:after {
     content: "\200D";
@@ -464,3 +550,6 @@ p {
     position: absolute;
     left: 0.8em;
     right: 0; }
+
+.pull-right {
+  text-align: right; }

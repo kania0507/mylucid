@@ -9,6 +9,8 @@
 @import 'layout/testimonials.scss'; 
 @import 'layout/eye-catcher.scss'; 
 @import 'layout/pricing-plans.scss'; 
+@import 'layout/contact.scss'; 
+@import 'layout/footer.scss'; 
 
 /* very basic styles */
 *{
@@ -22,6 +24,7 @@ body{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	line-height: 1;
+	
 }
 
 .page-wrapper {	
@@ -102,7 +105,7 @@ p {
 			width: 0.7em;
 			height: 2px;
 			position: absolute;			
-			left: 0em;
+			left: 0;
 			right: 0;
 			
 		}  		
@@ -118,5 +121,9 @@ p {
 			
 			
 		}  			
+}
+
+.pull-right {
+	text-align: right;
 }
 	

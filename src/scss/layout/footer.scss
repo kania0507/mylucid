@@ -1,0 +1,18 @@
+.footer {
+	background-color: $bg-black;
+	min-height: 10em;
+	text-align: center;
+	text-transform: uppercase;
+	color: #444348;
+	font-weight: 700;
+	font-size: 0.875em;
+	padding-top: 3em;
+	
+	&-social-icons {
+		
+		li {
+			display: inline;
+			padding-left: 3em;
+		}
+	}
+}
