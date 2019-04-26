@@ -1,6 +1,10 @@
-
+/*
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
-
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+*/
 .footer {
 	background-color: $bg-black;
 	min-height: 10em;
@@ -15,25 +19,27 @@
 		
 		li {
 			display: inline;
-			padding-left: 3em;
+			padding-right: 2em;
+			
+			
+			.svg-icon {
+				width: 1.2em;
+				height: 1.2em;
+				fill: #444348;
+				
+				&:hover {
+					fill: #337ab7;
+				}
+				
+			}
+			
 		}
+		
 	}
 	
-	.twitter {
-  //@extend %fa-icon;
-  //@extend .fab;
-  
-  @extend .fa;
-  @extend .fa-camera-retro;
-/*
-  &:before {
-    content: fa-content($fa-var-twitter);
-  }*/
-  &::before {
-    font-family: "FontAwesome";
-  }
+	p {
+		color: inherit;
 	}
-	
 	
 	
 }
