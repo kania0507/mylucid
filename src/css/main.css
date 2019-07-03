@@ -55,9 +55,9 @@ table {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   color: white;
-  background: linear-gradient(-45deg, #16151a 0%, black 100%); }
+  overflow: hidden;
+  background: linear-gradient(-45deg, rgba(22, 21, 26, 0.9) 0%, black 100%); }
   .header::after {
     content: '';
     background-image: url("../img/photo.png");
@@ -69,49 +69,57 @@ table {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    opacity: 0.4;
+    opacity: 0.8;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
     z-index: 1; }
-  .header .header-top {
-    width: 83.75vw;
-    margin-left: 8.125vw;
-    margin-right: 8.125vw;
+  .header-top {
+    width: 82vw;
+    margin-left: 9vw;
+    margin-right: 9vw;
     z-index: 100;
     height: 5em;
     display: flex;
     align-items: center;
     justify-content: center; }
-    .header .header-top-scrolled {
+    @media (max-width: 900px) {
+      .header-top {
+        flex-direction: column;
+        align-items: left; } }
+    .header-top-scrolled {
       position: fixed;
       background-color: #1a1a1a;
       width: 100%;
       transition: all .7s ease 0s;
       height: 4em; }
-    .header .header-top .header-top-logo {
+    .header-top-logo {
       flex-grow: 1; }
-    .header .header-top-nav {
+    .header-top-nav {
       justify-content: flex-start;
       font-size: 1em;
       font-weight: 600;
       line-height: 3.625em;
       color: #fff;
       font-weight: 400; }
-      .header .header-top-nav .menu {
+      @media (max-width: 900px) {
+        .header-top-nav {
+          font-size: 0.825em; } }
+      .header-top-nav .menu {
         display: flex;
         justify-content: stretch;
         align-content: flex-start; }
-        .header .header-top-nav .menu li {
+        .header-top-nav .menu li {
           margin-right: 2em; }
-        .header .header-top-nav .menu .active {
+        .header-top-nav .menu .active {
           border-bottom: 2px solid #008ed6; }
   .header .header-bottom {
-    width: 83.75vw;
-    margin-left: 8.125vw;
-    margin-right: 8.125vw;
+    width: 82vw;
+    margin-left: 9vw;
+    margin-right: 9vw;
+    position: relative;
     display: flex;
     justify-content: left;
     margin: 0 auto;
@@ -127,22 +135,25 @@ table {
         padding-top: 0.5em;
         padding-bottom: 0.5em; }
     .header .header-bottom-photo {
-      position: relative;
       z-index: 100;
-      overflow: hidden; }
+      overflow: hidden;
+      margin-left: -9em; }
+      @media (max-width: 900px) {
+        .header .header-bottom-photo {
+          margin-left: -2em; } }
       .header .header-bottom-photo-frame {
-        width: 55vw;
-        height: 32em;
+        width: 60vw;
+        height: 30em;
         background-image: url("../img/devices kopia.png");
         background-position: right top;
-        background-size: 200%;
+        background-size: 160%;
         background-repeat: no-repeat;
         z-index: 10; }
 
 .main-features {
-  width: 83.75vw;
-  margin-left: 8.125vw;
-  margin-right: 8.125vw;
+  width: 82vw;
+  margin-left: 9vw;
+  margin-right: 9vw;
   display: block;
   padding-top: 3.75em;
   padding-bottom: 3.75em;
@@ -188,9 +199,9 @@ table {
         align-items: center; }
 
 .main-about-long {
-  width: 83.75vw;
-  margin-left: 8.125vw;
-  margin-right: 8.125vw;
+  width: 82vw;
+  margin-left: 9vw;
+  margin-right: 9vw;
   display: flex;
   justify-content: stretch;
   padding-top: 2em;
@@ -237,9 +248,9 @@ table {
   padding-top: 2em;
   padding-bottom: 2em; }
   .main-about-short-wrapper {
-    width: 83.75vw;
-    margin-left: 8.125vw;
-    margin-right: 8.125vw;
+    width: 82vw;
+    margin-left: 9vw;
+    margin-right: 9vw;
     display: flex;
     justify-content: stretch;
     padding-top: 2em; }
@@ -269,9 +280,9 @@ table {
   .main-testimonials h2 {
     color: white; }
   .main-testimonials-wrapper {
-    width: 83.75vw;
-    margin-left: 8.125vw;
-    margin-right: 8.125vw; }
+    width: 82vw;
+    margin-left: 9vw;
+    margin-right: 9vw; }
   .main-testimonials .main-testimonials-slider {
     display: flex;
     justify-content: stretch;
@@ -349,9 +360,9 @@ table {
   padding-bottom: 3.125em;
   text-align: center; }
   .pricing-plans-wrapper {
-    width: 83.75vw;
-    margin-left: 8.125vw;
-    margin-right: 8.125vw; }
+    width: 82vw;
+    margin-left: 9vw;
+    margin-right: 9vw; }
   .pricing-plans-table {
     padding-top: 3.125em;
     display: flex;

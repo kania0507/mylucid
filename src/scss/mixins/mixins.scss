@@ -7,9 +7,9 @@
 
 
 @mixin set-vw {
-	width: 83.75vw;	
-	margin-left:  8.125vw;
-	margin-right:  8.125vw;
+	width: 82vw;//83.75vw;	
+	margin-left:  9vw;//8.125vw;
+	margin-right:  9vw;//8.125vw;
 }
 
 @mixin set-mediaquery-size($size) {

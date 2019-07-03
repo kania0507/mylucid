@@ -3,10 +3,10 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	height: 100vh;//36em;
+	//height: 100vh;//36em;
 	color: white;	
-	
-	background: linear-gradient(-45deg, rgba(22,21,26,1) 0%, rgba(0,0,0,1) 100%);		
+	overflow: hidden;
+	background: linear-gradient(-45deg, rgba(22,21,26,0.9) 0%, rgba(0,0,0,1) 100%);		
 	
 	&::after {
 		content: '';
@@ -21,7 +21,7 @@
 
 
 		background-attachment: fixed;
-		opacity: 0.4;
+		opacity: 0.8;
 		top: 0;
 		left: 0;
 		bottom: 0;
@@ -32,7 +32,7 @@
 	
 
 	
-	.header-top {
+	&-top {
 		@include set-vw;
 		
 		z-index: 100;
@@ -42,7 +42,10 @@
 		justify-content: center;	
 		
 		
-		
+		@include set-mediaquery-size($tablet-landscape){
+            flex-direction: column;
+            align-items: left;
+        }
 		
 		
 		&-scrolled {
@@ -53,7 +56,7 @@
 			height: 4em;
 		}
 		
-		.header-top-logo {			
+		&-logo {			
 			flex-grow: 1;
 			
 		}
@@ -69,20 +72,20 @@
 			font-weight: 400;
 			//text-align: right;
 			
+            @include set-mediaquery-size($tablet-landscape){
+                font-size: 0.825em;
+                        
+            }
 			
 			.menu {
-			//	align-self: stretch;			
-			//	margin: 0 auto;
+			
 				display: flex;
 				justify-content: stretch; //space-between
 				align-content: flex-start;
-				//padding-left: 2.5em;
 				
 				
 				li {
-						margin-right: 2em;
-					//padding-right: 1.5em;
-					
+				    margin-right: 2em;
 					
 				}
 				.active {
@@ -94,14 +97,14 @@
 	
 	.header-bottom{		
 		@include set-vw;
-		
+		position: relative;
 		display: flex;
 		justify-content: left;
 		
 		margin: 0 auto;
 		padding-top: 3.75em;
 		overflow: hidden;	
-		
+		//min-height: 65vh;
 		
 		&-message {
 			width: 42vw;
@@ -123,19 +126,25 @@
 		}
 		
 		&-photo {			
-			position: relative;
+			
 			z-index: 100;
 			overflow: hidden;	
-			
+			margin-left: -9em;
+            
+            @include set-mediaquery-size($tablet-landscape){
+                margin-left: -2em;
+                        
+            }
+            
 		
 			&-frame {				
-				width: 55vw;
-				height: 32em;
+				width: 60vw;
+				height: 30em;
 				
 				background-image: url('../img/devices kopia.png');
 				background-position: right top;
 				//background-size: cover;
-				background-size: 200%;
+				background-size: 160%;
 				background-repeat: no-repeat;
 				z-index: 10;
 			}
