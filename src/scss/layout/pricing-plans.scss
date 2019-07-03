@@ -93,12 +93,9 @@
                     
                     .per-month {
                         color: white;
-                    }
-                  
+                    }                  
 				}
-                                
-            
-				
+                     
 				
 				.per-month {
 					
@@ -118,7 +115,7 @@
 				align-items: center;
 				//box-shadow: 0 0 3px rgba(3,3,3,0.1);
 				font-weight: 400;
-				//padding-top: 2.5em;
+				
 				padding-bottom: 2.5em;
 				
 				
@@ -126,10 +123,7 @@
 					font-size: 1.125em;
 					color: #999;
 					padding: 2.5em 1.25em;
-					//padding-top: 2.5em;
-					//padding-bottom: 2.5em;
-					//padding-left: 1em;
-					//padding-right: 1em;
+					
 				}
 				
 				.btn {
@@ -138,8 +132,6 @@
 					font-weight: 400;
 					margin: 0 auto;
 					
-					
-					
 					&--blue {
 						font-size: inherit;
 						font-weight: inherit;
@@ -147,11 +139,8 @@
 					}
 				}
 			}
-				
-				
 			
 		}
-		
 		
 	}
 }

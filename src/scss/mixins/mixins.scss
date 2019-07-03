@@ -20,15 +20,15 @@
     } 
     @else if $size == $tablet-portrait {
     
-        @media (min-width: $tablet-portrait) { @content; }
+        @media (max-width: $tablet-portrait) { @content; }
     } 
     @else if $size == $tablet-landscape {
     
-        @media (min-width: $tablet-landscape) { @content; }
+        @media (max-width: $tablet-landscape) { @content; }
     } 
     @else if $size == $desktop {
     
-        @media (min-width: $desktop) { @content; }
+        @media (max-width: $desktop) { @content; }
     } 
     @else if $size == $big-desktop {
     

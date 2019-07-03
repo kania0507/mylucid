@@ -1,19 +1,16 @@
 .contact {
 	background-color: #ededed;
 	text-align: center;
-	padding-top: 3.75em;
-	//padding-bottom: 3.75em;
+	padding-top: 3.75em;	
 	margin: 0 auto;
-	z-index: 1;
-	overflow: hidden;
-	
+  
 	&-table {
 		display: flex;
 		align-items: stretch;
 		
 		padding-top: 2.5em;
 		justify-content: center;
-		
+		margin-bottom: 1em;
 		&-col {
 	
 			width: 25vw;
@@ -21,26 +18,18 @@
 			padding-right: 6em;
 			align-items: stretch;
 			height: 100%;
+            
+             @include set-mediaquery-size($tablet-landscape){
+                width: 90%;
+                padding-left: 2em;
+			    padding-right: 2em;
+                        
+            }
 		}
 	}
 	
-	.contact-form {		
-		width: 100%;
-		min-height: 30vh;
-		padding: 2.5em;
-		z-index: 10;		
-		margin-top: 10em;
-		
-		
-		&-row {
-			display: flex;
-			flex-direction: row;		
-			width: 100%;	
-			//align-items: flex-end;
-			justify-content: flex-end;
-				
-		}
-		&-wrapper {			
+    
+    &-wrapper {			
 			width: 50%;
 			margin: 0 auto;
 			background-color: $bg-black;
@@ -48,77 +37,107 @@
 			display: flex;
 			flex-direction: column;			
 			
-			//text-align: left;
-			
-			
 			padding-left: auto;
 			padding-right: auto;
-			z-index: 10;
 			
-			
-		}
-		&-left {									
-			width: 45%;
-				
-			flex-direction: row;		
-			//flex-grow: 1; /* Allow the element to grow if there is available space */
-			//flex-shrink:  1; /* Elements shrink at the same rate */
-			//flex-basis:  100%; /* Elements will cover the same amount, if is possible the 100% of the width */
-	
-			input {
-				padding: 0.5em;
-				margin: 0.2em;
-				height: 3.125em;
-				width: 98%;
-				border-radius: 5px;
-				border: 1px solid rgba(255,255,255,0.2);
-				background-color: $bg-black;
-				text-transform: uppercase;
-					
-			}			
-			
-		}
-		&-right {
-				
-			flex-direction: row;
-			//flex-grow: 1; /* Allow the element to grow if there is available space */
-			//flex-shrink:  1; /* Elements shrink at the same rate */
-			//flex-basis:  100%; /* Elements will cover the same amount, if is possible the 100% of the width */
-	
-		//	padding: 1em;
-			width: 45%;
-			flex: 1;
-			
-			textarea {
-				flex: 1; 
-				width: 98%;	
-				height: 97%;
-				margin: 0.2em;
-				border-radius: 5px;
-				border: 1px solid rgba(255,255,255,0.2);
-				font-family: inherit;
-				background-color: $bg-black;
-				text-transform: uppercase;
-					
-			}
-			
-		}
+        
+            @include set-mediaquery-size($tablet-landscape){
+                    width: 90%;
+                }
 		
-		.btn {
-		
-			margin: 1em;
-		}
-		
-		
-	}
-	
-	&-map {
-	
-	
+        &-form {		
+            width: 100%;
+            min-height: 35vh;
+            padding: 2.5em;
+            //z-index: 1000;	
+            
+
+
+            &-row {
+                display: flex;
+                flex-direction: row;		
+                width: 100%;	
+
+                justify-content: flex-end;
+                margin-bottom: 1em;
+
+                @include set-mediaquery-size($tablet-landscape){
+                    flex-direction: column;
+                }
+
+              &-left {									
+                     width: 45%;
+                     flex-direction: row;	
+                  
+                    @include set-mediaquery-size($tablet-landscape){
+                        width: 100%;
+                        
+                    }
+
+                    input {
+                        padding: 0.5em;
+                        margin: 0.2em;
+                        height: 3.125em;
+                        width: 98%;
+                        border-radius: 5px;
+                        border: 1px solid rgba(255,255,255,0.2);
+                        background-color: $bg-black;
+                        text-transform: uppercase;
+                        color: white;
+                    }		          			
+                }
+
+                &-right {				
+                    flex-direction: row;			
+                    width: 45%;
+                    flex: 1;
+                    
+                    @include set-mediaquery-size($tablet-landscape){
+                        width: 100%;
+                        
+                    }
+
+                    textarea {
+                        flex: 1; 
+                        width: 98%;	
+                        height: 97%;
+                        margin: 0.2em;
+                        border-radius: 5px;
+                        border: 1px solid rgba(255,255,255,0.2);
+                        font-family: inherit;
+                        background-color: $bg-black;
+                        text-transform: uppercase;
+                        padding: 0.5em;
+                        color: white;
+                    }
+
+                    .btn {
+
+                        margin: 1em;
+                  }
+                }
+
+            }
+
+            &::-webkit-input-placeholder { 
+              color: white;
+            }
+            ::-moz-placeholder {    
+              color: white;
+            }
+            :-ms-input-placeholder { 
+              color: white;
+            }
+            :-moz-placeholder { 
+              color: white;
+            }
+
+        }
+    }
+	&-map {	
 		min-height: 25em;
-		background-color: #ccc;
-		margin-top: -10em;
-		z-index: -10;
-		overflow: hidden;
+		background-color: #666;				
+       
+                
 	}
 }
