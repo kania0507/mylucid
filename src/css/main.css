@@ -274,6 +274,9 @@ table {
     justify-content: stretch;
     padding-top: 3em;
     text-align: left; }
+    @media (max-width: 900px) {
+      .main-testimonials .main-testimonials-slider {
+        flex-direction: column; } }
     .main-testimonials .main-testimonials-slider p {
       color: white;
       font-style: italic;
@@ -282,9 +285,15 @@ table {
     .main-testimonials .main-testimonials-slider-left {
       width: 50vw;
       padding: 1.1em; }
+      @media (max-width: 900px) {
+        .main-testimonials .main-testimonials-slider-left {
+          width: 100%; } }
     .main-testimonials .main-testimonials-slider-right {
       padding: 1.1em;
       width: 50vw; }
+      @media (max-width: 900px) {
+        .main-testimonials .main-testimonials-slider-right {
+          width: 100%; } }
     .main-testimonials .main-testimonials-slider-pagination {
       text-align: center;
       margin: 0 auto;
@@ -577,6 +586,9 @@ p {
   color: #999;
   padding-top: 1em;
   padding-bottom: 2em; }
+  @media (max-width: 900px) {
+    p {
+      font-size: 1em; } }
 
 .btn {
   border: 0;
