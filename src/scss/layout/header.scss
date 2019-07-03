@@ -3,7 +3,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	height: 36em;
+	height: 100vh;//36em;
 	color: white;	
 	
 	background: linear-gradient(-45deg, rgba(22,21,26,1) 0%, rgba(0,0,0,1) 100%);		
@@ -39,8 +39,19 @@
 		height: 5em;
 		display: flex;
 		align-items: center;
-		justify-content: center;		
+		justify-content: center;	
 		
+		
+		
+		
+		
+		&-scrolled {
+			position: fixed;
+			background-color: $header3;
+			width: 100%;
+			transition: all .7s ease 0s;
+			height: 4em;
+		}
 		
 		.header-top-logo {			
 			flex-grow: 1;
@@ -50,12 +61,14 @@
 		&-nav {			
 			
 			justify-content: flex-start;
-			font-size: 0.8em;
+			font-size: 1em;
+			font-weight: 600;
 			line-height: 3.625em;
-			color: #fffefe;
+			color: #fff;
 			
 			font-weight: 400;
 			//text-align: right;
+			
 			
 			.menu {
 			//	align-self: stretch;			
@@ -65,9 +78,15 @@
 				align-content: flex-start;
 				//padding-left: 2.5em;
 				
+				
 				li {
+						margin-right: 2em;
+					//padding-right: 1.5em;
 					
-					padding-right: 1.5em;
+					
+				}
+				.active {
+					border-bottom: 2px solid $blue;
 				}
 			}
 		}
@@ -85,7 +104,7 @@
 		
 		
 		&-message {
-			width: 50vw;
+			width: 42vw;
 				
 			padding-top: 1em;
 			padding-bottom: 1em;
@@ -105,18 +124,18 @@
 		
 		&-photo {			
 			position: relative;
-			
+			z-index: 100;
 			overflow: hidden;	
 			
 		
 			&-frame {				
-				width: 50vw;
-				height: 30em;
+				width: 55vw;
+				height: 32em;
 				
 				background-image: url('../img/devices kopia.png');
 				background-position: right top;
 				//background-size: cover;
-				background-size: 180%;
+				background-size: 200%;
 				background-repeat: no-repeat;
 				z-index: 10;
 			}

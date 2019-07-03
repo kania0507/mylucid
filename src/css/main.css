@@ -49,12 +49,13 @@ table {
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
 */
 /* basic colors */
+/* media queries */
 .header {
   font-size: 1em;
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 36em;
+  height: 100vh;
   color: white;
   background: linear-gradient(-45deg, #16151a 0%, black 100%); }
   .header::after {
@@ -84,20 +85,29 @@ table {
     display: flex;
     align-items: center;
     justify-content: center; }
+    .header .header-top-scrolled {
+      position: fixed;
+      background-color: #1a1a1a;
+      width: 100%;
+      transition: all .7s ease 0s;
+      height: 4em; }
     .header .header-top .header-top-logo {
       flex-grow: 1; }
     .header .header-top-nav {
       justify-content: flex-start;
-      font-size: 0.8em;
+      font-size: 1em;
+      font-weight: 600;
       line-height: 3.625em;
-      color: #fffefe;
+      color: #fff;
       font-weight: 400; }
       .header .header-top-nav .menu {
         display: flex;
         justify-content: stretch;
         align-content: flex-start; }
         .header .header-top-nav .menu li {
-          padding-right: 1.5em; }
+          margin-right: 2em; }
+        .header .header-top-nav .menu .active {
+          border-bottom: 2px solid #008ed6; }
   .header .header-bottom {
     width: 83.75vw;
     margin-left: 8.125vw;
@@ -108,7 +118,7 @@ table {
     padding-top: 3.75em;
     overflow: hidden; }
     .header .header-bottom-message {
-      width: 50vw;
+      width: 42vw;
       padding-top: 1em;
       padding-bottom: 1em;
       padding-right: 0em;
@@ -118,13 +128,14 @@ table {
         padding-bottom: 0.5em; }
     .header .header-bottom-photo {
       position: relative;
+      z-index: 100;
       overflow: hidden; }
       .header .header-bottom-photo-frame {
-        width: 50vw;
-        height: 30em;
+        width: 55vw;
+        height: 32em;
         background-image: url("../img/devices kopia.png");
         background-position: right top;
-        background-size: 180%;
+        background-size: 200%;
         background-repeat: no-repeat;
         z-index: 10; }
 
@@ -219,7 +230,9 @@ table {
         background-image: url("../img/Speedometer.png"); }
 
 .main-about-short {
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  padding-top: 2em;
+  padding-bottom: 2em; }
   .main-about-short-wrapper {
     width: 83.75vw;
     margin-left: 8.125vw;
@@ -337,6 +350,17 @@ table {
       margin: 1em;
       align-items: center;
       border: 1px solid rgba(3, 3, 3, 0.1); }
+      .pricing-plans-table-col:hover .pricing-plans-table-col-price {
+        background-color: #008ed6; }
+        .pricing-plans-table-col:hover .pricing-plans-table-col-price h4 {
+          color: white; }
+        .pricing-plans-table-col:hover .pricing-plans-table-col-price .per-month {
+          color: white; }
+      .pricing-plans-table-col:hover .btn {
+        font-size: inherit;
+        font-weight: inherit;
+        color: white;
+        background-color: #008ed6; }
       .pricing-plans-table-col-header {
         color: #15141a;
         text-transform: uppercase;
@@ -366,6 +390,8 @@ table {
         .pricing-plans-table-col-price--active {
           background-color: #008ed6;
           color: white; }
+          .pricing-plans-table-col-price--active .per-month {
+            color: white; }
         .pricing-plans-table-col-price .per-month {
           font-size: 1.125em;
           color: #999; }
@@ -383,7 +409,7 @@ table {
         .pricing-plans-table-col-body .btn {
           color: #008ed6;
           font-size: 1em;
-          font-weight: 700;
+          font-weight: 400;
           margin: 0 auto; }
           .pricing-plans-table-col-body .btn--blue {
             font-size: inherit;
@@ -526,7 +552,7 @@ p {
 .btn {
   border: 0;
   text-transform: uppercase;
-  font-size: 0.7em;
+  font-size: 0.8em;
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
   -ms-border-radius: 0.2em;

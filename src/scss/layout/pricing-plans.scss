@@ -14,12 +14,35 @@
 		//justify-content: center;
 		align-items: center;
 		
-		
+       
+                
+       
 		&-col {
 			width: 24vw;
 			margin: 1em;
 			align-items: center;
 			border: 1px solid rgba(3,3,3,0.1);
+            
+            &:hover {
+                .pricing-plans-table-col-price {
+                     background-color: $blue;
+                    
+                    h4 {
+                        color: white;
+                    }
+                    .per-month {
+                        color: white;
+                    }
+                }
+                
+                 .btn {
+						font-size: inherit;
+						font-weight: inherit;
+						color: white;
+                        background-color: $blue;
+					}
+                 
+            }
 			
 			&-header {
 				color: $bg-black;
@@ -28,6 +51,10 @@
 				font-weight: 700;
 				padding: 1em;
 				
+                
+                
+        
+                
 				align-items: center;
 				border-bottom: 1px solid rgba(3,3,3,0.1);
 				
@@ -46,6 +73,7 @@
 				padding-bottom: 1.5em;
 				border-bottom: 1px solid rgba(3,3,3,0.1);
 				
+               
 				h4 {
 					font-size: 3.75em;
 					position: relative;
@@ -62,8 +90,14 @@
 				&--active {
 					background-color: $blue;
 					color: white;
-					
+                    
+                    .per-month {
+                        color: white;
+                    }
+                  
 				}
+                                
+            
 				
 				
 				.per-month {
@@ -74,6 +108,7 @@
 					&--active {
 						color: white;
 					}
+                    
 				}
 			}
 			
@@ -100,7 +135,7 @@
 				.btn {
 					color: $blue;
 					font-size: 1em;
-					font-weight: 700;
+					font-weight: 400;
 					margin: 0 auto;
 					
 					

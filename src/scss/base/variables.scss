@@ -6,3 +6,10 @@ $grey: #58595d;
 $header3: #1a1a1a;
 $paragraph-features: #999;
 $bg-black: #15141a;
+
+/* media queries */
+$phone-only:599px; // max
+$tablet-portrait:600px; //min
+$tablet-landscape:900px; //min
+$desktop:1200px; //min
+$big-desktop:1800px; //min
