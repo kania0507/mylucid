@@ -345,11 +345,18 @@ table {
     display: flex;
     flex-direction: row;
     align-items: center; }
+    @media (max-width: 900px) {
+      .pricing-plans-table {
+        flex-direction: column; } }
     .pricing-plans-table-col {
       width: 24vw;
       margin: 1em;
       align-items: center;
       border: 1px solid rgba(3, 3, 3, 0.1); }
+      @media (max-width: 900px) {
+        .pricing-plans-table-col {
+          width: 90%;
+          margin: 0em; } }
       .pricing-plans-table-col:hover .pricing-plans-table-col-price {
         background-color: #008ed6; }
         .pricing-plans-table-col:hover .pricing-plans-table-col-price h4 {

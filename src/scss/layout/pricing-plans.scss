@@ -15,13 +15,21 @@
 		align-items: center;
 		
        
-                
-       
+        @include set-mediaquery-size($tablet-landscape){
+            flex-direction: column;
+        }
+        
 		&-col {
 			width: 24vw;
 			margin: 1em;
 			align-items: center;
 			border: 1px solid rgba(3,3,3,0.1);
+            
+             @include set-mediaquery-size($tablet-landscape){
+                width: 90%;
+                 margin: 0em;
+                        
+            }
             
             &:hover {
                 .pricing-plans-table-col-price {
