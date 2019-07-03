@@ -41,6 +41,11 @@ h1 {
 	
 	font-size: 3em;
 	//font-weight: 700;
+    
+     @include set-mediaquery-size($tablet-landscape){
+        font-size: 2em;
+                        
+    }
 }
 
 h2 {
@@ -49,11 +54,21 @@ h2 {
 	color:	$header3;
 	padding-top: 0.2em;
 	padding-bottom: 1em;
+    
+    @include set-mediaquery-size($tablet-landscape){
+        font-size: 1.25em;
+                        
+    }
 }
 
 h3 {
 	font-size: 1.5em;	
 	padding-top: 1.5em;
+    
+    @include set-mediaquery-size($tablet-landscape){
+        font-size: 0.875em;
+                        
+    }
 	
 }
 
